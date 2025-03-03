@@ -1,8 +1,8 @@
 const colors = [
-  "bg-red-200",
-  "bg-blue-200",
-  "bg-green-200",
-  "bg-yellow-200",
+  "bg-red-100",
+  "bg-tomato-100",
+  "bg-green-100",
+  "bg-yellow-100",
   "bg-purple-100",
 ];
 
@@ -42,9 +42,9 @@ buttons.forEach((button) =>
 
     const newDecreaseAmount = parseInt(decreaseAmount) - 1;
     document.getElementById("decrease").innerText = newDecreaseAmount;
-    alert("ok good!Board Updated Successfully!");
+    alert("DONE!Board Updated Successfully!");
     if (newDecreaseAmount === 0) {
-      alert("all task completed");
+      alert("ALL TASK DONE");
     }
     button.disabled = true;
 
