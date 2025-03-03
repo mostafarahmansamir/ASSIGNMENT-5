@@ -14,7 +14,7 @@
   </head>
   <body class="bg-blue-100 mx-auto my-0 px-2 py-2">
     <navbar>
-      <div class="bg-white mx-24 px-2 rounded-md flex justify-between">
+      <div class="bg-white mx-10 px-2 rounded-md flex justify-between">
         <div class="flex items-center">
           <img class="p-2" src="./assets/logo.png" alt="" />
           <h1 class="text-2xl">
@@ -33,6 +33,86 @@
       </div>
     </navbar>
 
-    <main></main>
+    <main class="bg-blue-100 mx-12 px-2 py-6">
+      <div class="text-center">
+        <h1 class="text-3xl mb-2 font-bold">Blog</h1>
+      </div>
+      <div class="bg-white rounded-lg p-2">
+        <h1 class="text-xl font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <h1>
+          Answer: <br />
+          There are five ways -- <br />
+          1.Using getElementById. <br />
+          2.Using getElementsByClassName. <br />
+          3.Using getElementsByTagName. <br />
+          4.Using querySelector. <br />
+          5.Using querySelectorAll. <br />
+        </h1>
+      </div>
+
+      <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h1>
+        <h1>
+          Answer: <br />
+          1. innerHtml returns all text, including html tags, that is contained
+          by an element. <br />
+          2. innerText returns all text contained by an element and all its
+          child elements. <br />
+          3. textContents is all text contained by an element and all its
+          children that are for formatting purposes only.
+        </h1>
+      </div>
+      <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">
+          Question-3: What is event delegation in the DOM?
+        </h1>
+        <h1>
+          Answer: <br />
+          Capturing and bubbling allow us to implement one of the most powerful
+          event handling patterns called event delegation.
+        </h1>
+      </div>
+      <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">
+          Question-4: What is event bubbling in the DOM?
+        </h1>
+        <h1>
+          Answer: <br />
+          Event bubbling is a behavior in JavaScript where an event that is
+          triggered on a child element will also be triggered on its parent
+          elements all the way up to the document object.
+        </h1>
+      </div>
+      <div class="bg-white rounded-lg p-2 mt-4">
+        <h1 class="text-xl font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h1>
+        <h1>
+          Answer: <br />
+          How to create? <br />
+          document.createElement("newDiv") <br />
+          const addElement = document.getElementById("parent");<br />
+          addElement.appendChild(newDiv); <br />
+          const removeDiv = document.getElementById("new-div");<br />
+          removeDiv.remove();
+        </h1>
+      </div>
+
+      <h1>-</h1>
+
+      <h1>-</h1>
+    </main>
+    <script>
+      document.getElementById("blog").addEventListener("click", function () {
+        window.location.href = "index.html";
+      });
+    </script>
   </body>
 </html>
